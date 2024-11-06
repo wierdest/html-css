@@ -4,246 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax Background with Grid Gallery</title>
-    <style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-
-        .parallax {
-            height: 100vh;
-            background-image: url('https://picsum.photos/1080/');
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-        }
-
-        .parallax-content-container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .parallax-content {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            max-width: 60%;
-            border-radius: 10px;
-        }
-
-        .text-section {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .portrait {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .content-love {
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #f1375fb2;
-            font-size: 24px;
-            padding: 20px;
-        }
-
-        .grid-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            max-width: 80%;
-            margin-top: 20px;
-        }
-
-        .grid-item {
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        .content-fame {
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #a4e6eb;
-            font-size: 24px;
-            padding: 20px;
-        }
-
-        .photo-comparison {
-            position: relative;
-            max-width: 600px;
-            margin: 40px auto; /* Center the comparison div */
-            overflow: hidden;
-        }
-
-        .photo-wrapper {
-            position: relative;
-            width: 100%;
-            height: auto;
-        }
-
-        .photo-base {
-            display: block;
-            width: 100%;
-        }
-
-        .photo-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            object-fit: cover;
-            overflow: hidden;
-            z-index: 2;
-            border-right: 2px solid #fff;
-            opacity: 0.6;
-            animation: slide-overlay 6s infinite alternate;
-        }
-        @keyframes slide-overlay {
-            0% {
-                width: 0%;
-            }
-            50% {
-                width: 100%;
-            }
-            100% {
-                width: 0%;
-            }
-        }
-
-        .content-work {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #9ec7b3;
-            font-size: 24px;
-            padding: 20px;
-        }
-
-        .skills-container {
-            width: 100%;
-            height: 100%;
-            max-width: 600px;
-            margin-top: 20px;
-        }
-
-        .skill {
-            margin: 15px 0;
-            font-size: 18px;
-        }
-
-        .skill-name {
-            margin-bottom: 5px;
-        }
-
-        .skill-bar {
-            background-color: #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            height: 20px;
-            position: relative;
-        }
-
-        .skill-fill {
-            background-color: #4caf50;
-            height: 100%;
-            width: 70%;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-    </style>
+    <title>Prática HTML e CSS - Alura</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="parallax">
-        <div class="parallax-content-container">
+    <header></header>
+    <main>
+        <div class="parallax">
             <div class="parallax-content">
                 <div class="text-section">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h1>Lorem ipsum dolor <strong class="title-highlight">sit amet</strong></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
                 </div>
                 <img class="portrait" src="https://avatar.iran.liara.run/public" alt="Portrait">
             </div>
         </div>
-    </div>
-    <div class="content-love">
-        Scroll down to see the parallax effect
-        <div class="grid-gallery">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-        </div>
-    </div>
-    <div class="parallax"></div>
-
-    <div class="content-fame">
-        Usar isso pra comparar duas fotos 
-        <div class="photo-comparison">
-            <div class="photo-wrapper">
-                <img class="photo-base" src="https://picsum.photos/200/" alt="After">
-                <img class="photo-overlay" src="https://picsum.photos/200/" alt="Before">
+        <div class="content-love">
+            Display grid responsivo
+            <div class="grid-gallery">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
             </div>
         </div>
-        
-    </div>
-    <div class="parallax"></div>
-    <div class="content-work">
-        Algumas das minhas habilidades moles
-        <div class="skills-container">
-            <div class="skill">
-                <div class="skill-name">Bom humor</div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 96%;"></div>
+        <div class="parallax"></div>
+        <div class="content-fame">
+            Usar isso pra comparar duas fotos 
+            <div class="photo-comparison">
+                <div class="photo-wrapper">
+                    <img class="photo-base" src="https://picsum.photos/200/" alt="After">
+                    <img class="photo-overlay" src="https://picsum.photos/200/" alt="Before">
                 </div>
             </div>
-            <div class="skill">
-                <div class="skill-name">Otimismo</div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 70%;"></div>
+            
+        </div>
+        <div class="parallax"></div>
+        <div class="content-work">
+            Gráficos em barra
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-name">Bom humor</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 96%;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">Falar em público</div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 65%;"></div>
+                <div class="skill">
+                    <div class="skill-name">Otimismo</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">Persuasão</div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 55%;"></div>
+                <div class="skill">
+                    <div class="skill-name">Falar em público</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Persuasão</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 55%;"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
