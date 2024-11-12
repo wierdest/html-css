@@ -14,6 +14,7 @@ main {
     flex-direction: column;
 }
 
+
 .parallax {
     height: 100vh;
     background-image: url('https://picsum.photos/1080/');
@@ -25,17 +26,18 @@ main {
 .parallax-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    padding: 2%;
     background: rgba(255, 255, 255, 0.5);
-
-    max-height: 100px
+    max-height: 200px;
+    border-radius: 10px;
 }
 
 .text-section {
     font-size: 18px;
     line-height: 1.6;
     font-family: 'Krona One', sans-serif;
+    min-width: 100px;
     
 }
 
