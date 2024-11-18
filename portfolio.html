@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="port-styles.css">
-
-
+    <link rel="stylesheet" href="./styles/port-styles.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="portfolio.html">Home</a>
+            <a class="cabecalho__menu__link" href="sobre.html">Sobre mim</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong 
-            class="titulo-destaque">com um Front-end de qualidade!
+            class="titulo-destaque"> com um Front-end de qualidade!
             </strong></h1>
             <p class="apresentacao__conteudo__texto">Olá! Sou Joana Santos, desenvolvedora
             Front-end com especialidade em React, HTML e
@@ -26,18 +29,26 @@
                 <a class="apresentacao__links__link" href="https://instagram.com/rafaballerini">
                     <img src="./assets/github.png" alt="Ícone do github, o outline de um gato">
                     Instagram
-                    </a>
                 </a>
                 <a class="apresentacao__links__link" href="https://github.com/guilhermeonrails">
                     <img src="./assets/instagram.png" alt="Ícone do Instagram, o outline de uma câmera">
                     Github
-                    </a>
+                </a>
+                <a class="apresentacao__links__link" href="https://github.com/guilhermeonrails">
+                    <img src="./assets/linkedin.png" alt="Ícone do Instagram, o outline de uma câmera">
+                    Linkedin
+                </a>
+                <a class="apresentacao__links__link" href="https://github.com/guilhermeonrails">
+                    <img src="./assets/twitch.png" alt="Ícone do Instagram, o outline de uma câmera">
+                    Twitch
                 </a>
             </div>
         </section>
-        <img src="imagem.png" alt="Foto da Joana Santos programando">
+        <img src="./assets/imagem.png" alt="Foto da Joana Santos programando">
     </main>
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido o mais rápido possível pra terminar o PDI</p>
+    </footer>
     
 </body>
 </html>
